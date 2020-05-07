@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/language-Go-orange.svg">
+  <img src="https://img.shields.io/badge/language-Go 1.13-orange.svg">
   <img src="https://img.shields.io/badge/IDE-Goland-blue.svg?style=flat">
   <br/>
   <img src="https://img.shields.io/badge/codeRepo-Github-blue.svg?style=flat&logo=github">
