@@ -1,0 +1,14 @@
+{
+  "name": "web_template",
+  "server": {
+    "host": "0.0.0.0:3000",
+    "request_timeout": 0,
+    "response_timeout": 0,
+    "request_max": 50000,
+    "throttle": 10000
+  },
+  "logger": {
+    "output": "stdout",
+    "level": "debug"
+  }
+}
