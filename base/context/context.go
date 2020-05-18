@@ -3,6 +3,8 @@ package context
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
+
+	"github.com/JJMeg/web_template/base/logger"
 )
 
 const (
@@ -46,5 +48,12 @@ func NewHandler(fn func(*Context)) gin.HandlerFunc {
 		fn(&Context{
 			Context: ctx,
 		})
+	}
+}
+
+func NewLoggerMiddleware(l *logrus.Logger) gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		requstID := ctx.GetString(RequstID)
+		ctx.Set(ContextLoggerKey, logger.NewAppLogger(l, requstID))
 	}
 }

@@ -18,6 +18,6 @@ func (e Error) String() string {
 	return e.Status + ": " + e.Message
 }
 
-func (e Error) SerMsg(msg string) {
+func (e *Error) SetMsg(msg string) {
 	e.Message = msg
 }
