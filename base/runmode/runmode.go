@@ -31,3 +31,15 @@ func (mode RunMode) ParseGinMode() string {
 		return ""
 	}
 }
+
+func (mode RunMode) IsProduction() bool {
+	return mode == Production
+}
+
+func (mode RunMode) IsDevelopment() bool {
+	return mode == Development
+}
+
+func (mode RunMode) IsTest() bool {
+	return mode == Test
+}

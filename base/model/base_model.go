@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/globalsign/mgo/bson"
 	"time"
+
+	"github.com/globalsign/mgo/bson"
 )
 
 type BaseModel struct {

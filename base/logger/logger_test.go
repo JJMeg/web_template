@@ -25,6 +25,7 @@ func TestLogger(t *testing.T) {
 
 	cfg.Output = "./mock/log"
 	logger, err = NewLogger(cfg)
+	// can not create dir
 	assertion.NotNil(err)
 	assertion.Nil(logger)
 }
